@@ -1,12 +1,42 @@
-SELECT orders.order_id, suppliers.name   
-FROM suppliers  
-INNER JOIN orders  
-ON suppliers.supplier_id = orders.supplier_id  
-ORDER BY order_id;
+Boolean Aggregations
+---------------------
+BOOL_AND
+BOOL_OR
 
-SELECT p. p_id, p.cus_id, p.p_name, c1.name1, c2.name2  
-FROM product AS p  
-LEFT JOIN customer1 AS c1  
-ON p.cus_id=c1.cus_id  
-LEFT JOIN customer2 AS c2  
-ON p.cus_id = c2.cus_id  
+Statistical Aggregations
+------------------------
+CORRELATION
+COVAR POP
+COVAR SAMP
+STD POP
+STD SAMP
+STDEV
+VAR POP
+VAR SAMP
+VARIANCE
+
+Regression Aggregations
+-----------------------
+REGR_AVGX
+REGR_AVGY
+REGR_COUNT
+REGR_INTERCEPT
+REGR_R2
+REGR_SLOPE
+REGR_SXX
+REGR_SXY
+REGR_SYY
+
+Windowed Aggregations
+---------------------
+CUME_DIST
+DENSE_RANK
+FIRST_VALUE
+LAST_VALUE
+LEAD
+LAG
+NTH_VALUE
+NTILE
+PERCENT_RANK
+RANK
+ROW_NUMBER
